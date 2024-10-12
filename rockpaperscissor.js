@@ -63,3 +63,15 @@ function getHumanChoice() {
         //console.log("Human choice:" + humanChoice, "Computer choice:" + computerChoice);
         console.log("Human score = "     + humanScore, "Computer score = "     + computerScore);
       }
+      playRound(getHumanChoice(), getComputerChoice());
+    }
+    //console.log("Human score = " + humanScore, "Computer score = " +computerScore);
+    if (humanScore > computerScore) {
+      console.log("You won this round. Reload for another round.");
+    } else if (humanScore < computerScore) {
+      console.log("Computer won this round. Reload for another round.");
+    } else {
+      console.log("It's a draw. Reload for another round.");
+    }
+  }
+  playGame();
